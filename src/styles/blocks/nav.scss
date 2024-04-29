@@ -1,0 +1,40 @@
+.nav {
+  display: none;
+
+  @include on-desktop {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 60px;
+
+    list-style: none;
+  }
+
+  &__link {
+    --text-color-main: #{$gray-2};
+    --text-color-hover: #{$red};
+
+    position: relative;
+
+    @include text-effect;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $red;
+      bottom: -4px;
+
+      transform: scale(0);
+      transform-origin: left;
+      transition: transform $duration;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+}

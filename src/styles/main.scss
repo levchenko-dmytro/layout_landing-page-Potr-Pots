@@ -1,3 +1,31 @@
-body {
-  margin: 0;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./blocks/page";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/link";
+@import "./blocks/icon";
+@import "./blocks/top-bar";
+@import "./blocks/nav";
+@import "./blocks/bottom-header";
+@import "./blocks/button";
+@import "./blocks/grid";
+@import "./blocks/show-more";
+@import "./blocks/menu";
+@import "./blocks/main";
+@import "./blocks/section-title";
+@import "./blocks/for-whom";
+@import "./blocks/bookmark";
+@import "./blocks/articles";
+@import "./blocks/features";
+@import "./blocks/potr-team";
+@import "./blocks/materials";
+@import "./blocks/materials-mob";
+@import "./blocks/info-icon";
+@import "./blocks/potr-size";
+@import "./blocks/benefits";
+@import "./blocks/questions";
+@import "./blocks/stamp";
+@import "./blocks/form";
+@import "./blocks/contacts";
+@import "./blocks/footer";

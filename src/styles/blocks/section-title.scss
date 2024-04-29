@@ -1,0 +1,23 @@
+.section-title {
+  margin: 0 0 24px;
+  color: $gray-1;
+
+  @include h2;
+
+  @include on-tablet {
+    margin-bottom: 18px;
+  }
+
+  &--large {
+    @include h1;
+  }
+
+  &--blue {
+    color: $turquoise;
+  }
+
+  &--outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px $turquoise;
+  }
+}
